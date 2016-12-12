@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+</h:head>
+<h:body>
+    <hr />
+    <br /><h1 align="center"><font size="+3" color="#CC0066">Duke's </font> <img src="https://s3-ap-southeast-1.amazonaws.com/itp212/duke.books.gif" alt="Duke holding books" />
+    <font size="+3" color="black">Bookstore</font></h1>
+    <br />
+    <hr />
+    <h:form>
+        <h2>#{bookBean.book.title}</h2>&nbsp; by<em> #{bookBean.book.author} </em> (#{bookBean.book.year})<br /> <br />
+        <h4>Here's what the critcs say: </h4>
+        <blockquote>#{bookBean.book.description}</blockquote>
+        <h4>Our Price: #{bookBean.book.price}</h4>
+        <p>
+            <a href="/catalog.xhtml">Continue Shopping</a></p>
+    </h:form>
+</h:body>
+</html>
